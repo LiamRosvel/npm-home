@@ -9,345 +9,345 @@ html(lang="en")
         link(rel="stylesheet" href="./css/normalize.css")
         link(rel="stylesheet" href="./css/main.css")
     body
-        header
-            div
-                div
-                    figure
-                        img(src="./images/npm-logo.svg" alt="npm-logo")
-                    div
-                        p <a href="#">sign up</a> or <a href="#">log in</a>
-                        svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24")
+        header.header
+            div.header__container
+                div.header__logo-content
+                    figure.header__logo-container
+                        img.header__logo(src="./images/npm-logo.svg" alt="npm-logo")
+                    div.header__icons-container
+                        p.header__sign <a href="#">sign up</a> or <a href="#">log in</a>
+                        svg.header__menu-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24")
                             path(d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z") 
-                nav
-                    ul
-                        li: a(href="#") Naked Panda Meditations
-                        li: a(href="#") npm Enterprise
-                        li: a(href="#") features
-                        li: a(href="#") pricing
-                        li: a(href="#") documentation
-                        li: a(href="#") support
+                nav.nav
+                    ul.nav__list
+                        li.nav__list-item: a.nav__link(href="#") Naked Panda Meditations
+                        li.nav__list-item: a.nav__link(href="#") npm Enterprise
+                        li.nav__list-item: a.nav__link(href="#") features
+                        li.nav__list-item: a.nav__link(href="#") pricing
+                        li.nav__list-item: a.nav__link(href="#") documentation
+                        li.nav__list-item: a.nav__link(href="#") support
         main
-            section
-                div
-                    div
-                        form
-                            label(for="search-package")
-                            input(type="search" name="search-package" placeholder="find package" id="search-package")
-                            button
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24")
+            section.landing
+                div.landing__container
+                    div.landing__search-container
+                        form.landing__search-form
+                            label.landing__search-label(for="search-package")
+                            input.landing__search-input(type="search" name="search-package" placeholder="find package" id="search-package")
+                            button.landing__search-button
+                                svg.landing__search-menu-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24")
                                     path(d="M9.516 14.016c2.484 0 4.5-2.016 4.5-4.5s-2.016-4.5-4.5-4.5-4.5 2.016-4.5 4.5 2.016 4.5 4.5 4.5zM15.516 14.016l4.969 4.969-1.5 1.5-4.969-4.969v-0.797l-0.281-0.281c-1.125 0.984-2.625 1.547-4.219 1.547-3.609 0-6.516-2.859-6.516-6.469s2.906-6.516 6.516-6.516 6.469 2.906 6.469 6.516c0 1.594-0.563 3.094-1.547 4.219l0.281 0.281h0.797z")
-                    div
-                        header
-                            h1 Build amazing things
-                            p
+                    div.landing__copy-container
+                        header.landing__header
+                            h1.landing__title Build amazing things
+                            p.landing__copy
                                 |npm is the package manager for JavaScript. Find, share, and reuse packages of code from hundreds of thousands of developers — and assemble them in powerful new ways.
-                        a(href="#") Get started
-            section
-                div
-                    figure
-                        img(src="./images/collaboration-security.svg" alt="npm-friends")
-                    div
-                        header
-                            h2 Empower your team with private packages
-                            ul
-                                li Securely manage private code with the same workflow as open source projects
-                                li Publish and control access to your own scope
-                                li Foster code discovery and re-use within teams
-                        a(href="#") Try it now
-            section
-                div
-                    figure
-                        img(src="./images/npm-enterprise.svg" alt="enterprise")
-                    div
-                        header
-                            h2 Take your enterprise to new heights
-                            p
+                        a.landing__button(href="#") Get started
+            section.security
+                div.security__container
+                    figure.security__img-container
+                        img.security__img(src="./images/collaboration-security.svg" alt="npm-friends")
+                    div.security__copy-container
+                        header.security__header
+                            h2.security__title Empower your team with private packages
+                            ul.security__list
+                                li.security__list-item Securely manage private code with the same workflow as open source projects
+                                li.security__list-item Publish and control access to your own scope
+                                li.security__list-item Foster code discovery and re-use within teams
+                        a.security__button(href="#") Try it now
+            section.enterprise
+                div.enterprise__container
+                    figure.enterprise__img-container
+                        img.enterprise__img(src="./images/npm-enterprise.svg" alt="enterprise")
+                    div.enterprise__copy-container
+                        header.enterprise__header
+                            h2.enterprise__title Take your enterprise to new heights
+                            p.enterprise__copy
                                 |Harness the power of npm inside large teams. Host your own private npm registry and securely integrate with your workflow and tools.
-                        a(href="#") Learn more
-            section
-                div
-                    header
-                        h2 What can you make with 350,000 building blocks?
-                        p
+                        a.enterprise__button(href="#") Learn more
+            section.blocks
+                div.blocks__container
+                    header.blocks__header
+                        h2.blocks__header-title What can you make with 350,000 building blocks?
+                        p.blocks__header-copy
                             |The npm registry hosts over a quarter million packages of reusable code — the largest code registry in the world.
-                    div
-                        article
-                            figure
-                                img(src="./images/binoculars-dot.svg" alt="item1")
-                            h3 Find
-                            p
+                    div.blocks__items-container
+                        article.blocks__item
+                            figure.blocks__item-img-container
+                                img.blocks__item-img(src="./images/binoculars-dot.svg" alt="item1")
+                            h3.blocks__item-title Find
+                            p.blocks__item-copy
                                 |Popular libraries like JQuery, Bootstrap, React, and Angular, and components from frameworks including Polymer.
-                        article
-                            figure
-                                img(src="./images/mountain-dot.svg" alt="item2")
-                            h3 Discover
-                            p
+                        article.blocks__item
+                            figure.blocks__item-img-container
+                                img.blocks__item-img(src="./images/mountain-dot.svg" alt="item2")
+                            h3.blocks__item-title Discover
+                            p.blocks__item-copy
                                 |Packages for mobile, IoT, front end, back end, robotics… everything you need to start building amazing things.
-                        article
-                            figure
-                                img(src="./images/rucksack-dot.svg" alt="item3")
-                            h3 Build
-                            p
+                        article.blocks__item
+                            figure.blocks__item-img-container
+                                img.blocks__item-img(src="./images/rucksack-dot.svg" alt="item3")
+                            h3.blocks__item-title Build
+                            p.blocks__item-copy
                                 |Assemble packages like building blocks to quickly develop awesome new projects.
-            section
-                div
-                    header
-                        h2 Get started with npm
-                        p 
+            section.pricing
+                div.pricing__container
+                    header.pricing__header
+                        h2.pricing__header-title Get started with npm
+                        p.pricing__header-copy 
                             |npm has tools for projects and teams of every size.
-                    div
-                        div
-                            div bg-rojo
-                            div
-                                div
-                                    span $
-                                    span 7
-                                    p per month
-                            div
-                                h3 Solo
-                                p
+                    div.pricing__items-container
+                        div.pricing__item
+                            div.pricing__bg-color.pricing__bg-color--red bg-rojo
+                            div.pricing__block-price-container
+                                div.pricing__block-price-content
+                                    span.pricing__price-sign $
+                                    span.pricing__price 7
+                                    p.pricing__price-month per month
+                            div.pricing__block-content
+                                h3.pricing__block-title Solo
+                                p.pricing__block-text.pricing__block-text--style
                                     |Your own restricted scope for private code
-                                p
+                                p.pricing__block-text
                                     |Combine public packages with private code in your own namespace
-                                p
+                                p.pricing__block-text
                                     |Delegate access to other users
-                                p
+                                p.pricing__block-text
                                     |Publish and install unlimited packages
-                                a(href="#") Sign Up
-                        div
-                            div bg-azul
-                            div
-                                div
-                                    span $
-                                    span 7
-                                    p per month
-                            div
-                                h3 Orgs
-                                p
+                                a.pricing__block-button.pricing__block-button--bg(href="#") Sign Up
+                        div.pricing__item
+                            div.pricing__bg-color.pricing__bg-color--blue bg-azul
+                            div.pricing__block-price-container
+                                div.pricing__block-price-content
+                                    span.pricing__price-sign $
+                                    span.pricing__price 7
+                                    p.pricing__price-month per month
+                            div.pricing__block-content
+                                h3.pricing__block-title Orgs
+                                p.pricing__block-text.pricing__block-text--style
                                     |Easy management to empower your team
-                                p
+                                p.pricing__block-text
                                     |Control publishing and package access for groups
-                                p
+                                p.pricing__block-text
                                     |Manage varying permissions for different teams and roles
-                                p
+                                p.pricing__block-text
                                     |Pay for multiple users in one bill
-                                a(href="#") Sign Up
-                        div
-                            div bg-yellow
-                            div
-                                div
-                                    span from
-                                    span $
-                                    span 16
-                                    p per month
-                            div
-                                h3 Enterprise
-                                p
+                                a.pricing__block-button.pricing__block-button--bg(href="#") Sign Up
+                        div.pricing__item
+                            div.pricing__bg-color.pricing__bg-color--yellow bg-yellow
+                            div.pricing__block-price-container
+                                div.pricing__block-price-content
+                                    span.pricing__price-from from
+                                    span.pricing__price-sign $
+                                    span.pricing__price 16
+                                    p.pricing__price-month per month
+                            div.pricing__block-content
+                                h3.pricing__block-title Enterprise
+                                p.pricing__block-text.pricing__block-text--style
                                     |Bring npm into large companies
-                                p
+                                p.pricing__block-text
                                     |Selectively mirror the registry behind your firewall
-                                p
+                                p.pricing__block-text
                                     |Customize support and SLAs to meet your needs
-                                p
+                                p.pricing__block-text
                                     |Integrate with existing deployment and auth­enti­cation tools
-                                a(href="#") Learn More
-                    div
-                        h3 npm
-                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                                a.pricing__block-button.pricing__block-button--bg(href="#") Learn More
+                    div.pricing__footer
+                        h3.pricing__footer-title npm
+                            svg.pricing__footer-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
                                 path(d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z")
                             |OSS
-                        p
-                            |Browsing, installing, and publishing to the npm registry is always free for open source code. <a href="#">Create a free npm account.</a>
-            section
-                div
-                    header
-                        h2 Packages people 'npm install' a lot
-                    div
-                        div
-                            div
-                                figure
-                                    img(src="./images/browserify.png" alt="browserify")
-                                div
-                                    h4 browserify
-                                    p browser-side require() the nod...
-                                    p <a href="#">13.1.1</a> published 2 months ago by <a href="#">substack</a> 
-                            div
-                                figure
-                                    img(src="./images/grunt.png" alt="grunt")
-                                div
-                                    h4 grunt-cli
-                                    p The grunt command line interf...
-                                    p <a href="#">1.2.0</a> published 2 months ago by <a href="#">substack</a>
-                            div
-                                figure
-                                    img(src="./images/bower.png" alt="bower")
-                                div
-                                    h4 bower
-                                    p The browser package manager
-                                    p <a href="#">1.8.0</a> published 2 months ago by <a href="#">substack</a>
-                        div
-                            div
-                                figure
-                                    img(src="./images/gulp.png" alt="gulp")
-                                div
-                                    h4 gulp
-                                    p The streaming build system
-                                    p <a href="#">3.9.1</a> published 2 months ago by <a href="#">substack</a> 
-                            div
-                                figure
-                                    img(src="./images/grunt.png" alt="grunt")
-                                div
-                                    h4 grunt
-                                    p The JavaScript Task Runner
-                                    p <a href="#">1.0.1</a> published 2 months ago by <a href="#">substack</a>
-                            div
-                                figure
-                                    img(src="./images/express.png" alt="express")
-                                div
-                                    h4 espress
-                                    p Fast, unopinionated, minimali...
-                                    p <a href="#">4.14.0</a> published 2 months ago by <a href="#">substack</a>
-                        div
-                            div
-                                figure
-                                    img(src="./images/npm.svg" alt="npm")
-                                div
-                                    h4 npm
-                                    p a package manager for JavaSc...
-                                    p <a href="#">4.0.3</a> published 2 months ago by <a href="#">substack</a> 
-                            div
-                                figure
-                                    img(src="./images/cordova.png" alt="cordova")
-                                div
-                                    h4 Cordova
-                                    p Cordova command line interf...
-                                    p <a href="#">6.4.0</a> published 2 months ago by <a href="#">substack</a>
-                            div
-                                figure
-                                    img(src="./images/forever.svg" alt="forever")
-                                div
-                                    h4 forever
-                                    p A simple CLI tool for ensuring...
-                                    p <a href="#">0.15.3</a> published 2 months ago by <a href="#">substack</a>
-            section
-                div
-                    article
-                        figure
-                            img(src="./images/avatar3.svg" alt="avatar")
-                        div
-                            h3 Get started with npm
-                            p
-                                |The npm command-line tool is bundled with <a href="#">Node.js</a>. If you have it installed, then you already have npm too. If not, go download <a href="#">Node.js</a>.
-                    article
-                        figure
-                            img(src="./images/avatar2.svg" alt="avatar")
-                        div
-                            h3 Screencasts & docs
-                            p
-                                |We've got a <a href="#">new docs site</a> featuring videos and tutorials to help you make your javascript dreams come true. Head on over to <a href="#">docs.npmjs.com</a>
-                    article
-                        figure
-                            img(src="./images/avatar1.svg" alt="avatar")
-                        div
-                            h3 Find work
-                            p
-                                |<a href="#">HBO</a>, <a href="#">OpenTable</a>, <a href="#">Alpha</a> and lots of other companies are hiring javascript developers. <a href="#">View all 32…</a>
-            section
-                div
-                    div
-                        div
-                            h4 lodash
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                        p.pricing__footer-text
+                            |Browsing, installing, and publishing to the npm registry is always free for open source code. <a class="pricing__footer-text-link" href="#">Create a free npm account.</a>
+            section.packages
+                div.packages__container
+                    header.packages__header
+                        h2.packages__header-title Packages people 'npm install' a lot
+                    div.packages__items-container
+                        div.packages__item
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/browserify.png" alt="browserify")
+                                div.packages__copy-container
+                                    h4.packages__copy-title browserify
+                                    p.packages__copy-subtitle browser-side require() the nod...
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">13.1.1</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a> 
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/grunt.png" alt="grunt")
+                                div.packages__copy-container
+                                    h4.packages__copy-title grunt-cli
+                                    p.packages__copy-subtitle The grunt command line interf...
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">1.2.0</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a>
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/bower.png" alt="bower")
+                                div.packages__copy-container
+                                    h4.packages__copy-title bower
+                                    p.packages__copy-subtitle The browser package manager
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">1.8.0</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a>
+                        div.packages__item
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/gulp.png" alt="gulp")
+                                div.packages__copy-container
+                                    h4.packages__copy-title gulp
+                                    p.packages__copy-subtitle The streaming build system
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">3.9.1</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a> 
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/grunt.png" alt="grunt")
+                                div.packages__copy-container
+                                    h4.packages__copy-title grunt
+                                    p.packages__copy-subtitle The JavaScript Task Runner
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">1.0.1</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a>
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/express.png" alt="express")
+                                div.packages__copy-container
+                                    h4.packages__copy-title espress
+                                    p.packages__copy-subtitle Fast, unopinionated, minimali...
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">4.14.0</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a>
+                        div.packages__item
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/npm.svg" alt="npm")
+                                div.packages__copy-container
+                                    h4.packages__copy-title npm
+                                    p.packages__copy-subtitle a package manager for JavaSc...
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">4.0.3</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a> 
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/cordova.png" alt="cordova")
+                                div.packages__copy-container
+                                    h4.packages__copy-title Cordova
+                                    p.packages__copy-subtitle Cordova command line interf...
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">6.4.0</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a>
+                            div.packages__item-pack
+                                figure.packages__item-img-container
+                                    img.packages__item-img(src="./images/forever.svg" alt="forever")
+                                div.packages__copy-container
+                                    h4.packages__copy-title forever
+                                    p.packages__copy-subtitle A simple CLI tool for ensuring...
+                                    p.packages__copy-version <a class="packages__copy-link" href="#">0.15.3</a> published 2 months ago by <a class="packages__copy-link" href="#">substack</a>
+            section.start
+                div.start__container
+                    article.start__item
+                        figure.start__img-container
+                            img.start__img(src="./images/avatar3.svg" alt="avatar")
+                        div.start__copy-content
+                            h3.start__copy-title Get started with npm
+                            p.start__copy
+                                |The npm command-line tool is bundled with <a class="start__copy-link" href="#">Node.js</a>. If you have it installed, then you already have npm too. If not, go download <a class="start__copy-link" href="#">Node.js</a>.
+                    article.start__item
+                        figure.start__img-container
+                            img.start__img(src="./images/avatar2.svg" alt="avatar")
+                        div.start__copy-content
+                            h3.start__copy-title Screencasts & docs
+                            p.start__copy
+                                |We've got a <a class="start__copy-link" href="#">new docs site</a> featuring videos and tutorials to help you make your javascript dreams come true. Head on over to <a class="start__copy-link" href="#">docs.npmjs.com</a>
+                    article.start__item
+                        figure.start__img-container
+                            img.start__img(src="./images/avatar1.svg" alt="avatar")
+                        div.start__copy-content
+                            h3.start__copy-title Find work
+                            p.start__copy
+                                |<a class="start__copy-link" href="#">HBO</a>, <a class="start__copy-link" href="#">OpenTable</a>, <a class="start__copy-link" href="#">Alpha</a> and lots of other companies are hiring javascript developers. <a class="start__copy-link" href="#">View all 32…</a>
+            section.modules
+                div.modules__container
+                    div.modules__item
+                        div.modules__item-content
+                            h4.modules__item-title lodash
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p Lodash modular utilities.
-                            p <a href="#">4.17.2</a> published 3 weeks ago by <a href="#">jdalton</a>
-                        div
-                            h4 request
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle Lodash modular utilities.
+                            p.modules__item-version <a href="#">4.17.2</a> published 3 weeks ago by <a href="#">jdalton</a>
+                        div.modules__item-content
+                            h4.modules__item-title request
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p Simplified HTTP request client.
-                            p <a href="#">2.79.0</a> published 3 weeks ago by <a href="#">jdalton</a>
-                        div
-                            h4 async
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle Simplified HTTP request client.
+                            p.modules__item-version <a href="#">2.79.0</a> published 3 weeks ago by <a href="#">jdalton</a>
+                        div.modules__item-content
+                            h4.modules__item-title async
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p Higher-order functions and common patterns for as
-                            p <a href="#">2.1.4</a> published 3 weeks ago by <a href="#">jdalton</a>
-                    div
-                        div
-                            h4 underscore
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle Higher-order functions and common patterns for as
+                            p.modules__item-version <a href="#">2.1.4</a> published 3 weeks ago by <a href="#">jdalton</a>
+                    div.modules__item
+                        div.modules__item-content
+                            h4.modules__item-title underscore
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p JavaScript's functional programming help...
-                            p <a href="#">1.8.3</a> published 3 weeks ago by <a href="#">jdalton</a>
-                        div
-                            h4 express
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle JavaScript's functional programming help...
+                            p.modules__item-version <a href="#">1.8.3</a> published 3 weeks ago by <a href="#">jdalton</a>
+                        div.modules__item-content
+                            h4.modules__item-title express
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p Fast, unopinionated, minimalist web fra..
-                            p <a href="#">4.14.0</a> published 3 weeks ago by <a href="#">jdalton</a>
-                        div
-                            h4 chalk
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle Fast, unopinionated, minimalist web fra..
+                            p.modules__item-version <a href="#">4.14.0</a> published 3 weeks ago by <a href="#">jdalton</a>
+                        div.modules__item-content
+                            h4.modules__item-title chalk
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p Terminal string styling done right. Much..
-                            p <a href="#">1.1.3</a> published 3 weeks ago by <a href="#">jdalton</a>
-                    div
-                        div
-                            h4 bluebird
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle Terminal string styling done right. Much..
+                            p.modules__item-version <a href="#">1.1.3</a> published 3 weeks ago by <a href="#">jdalton</a>
+                    div.modules__item
+                        div.modules__item-content
+                            h4.modules__item-title bluebird
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p Full featured Promises/A+ implementatio...
-                            p <a href="#">3.4.6</a> published 3 weeks ago by <a href="#">jdalton</a>
-                        div
-                            h4 commander
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle Full featured Promises/A+ implementatio...
+                            p.modules__item-version <a href="#">3.4.6</a> published 3 weeks ago by <a href="#">jdalton</a>
+                        div.modules__item-content
+                            h4.modules__item-title commander
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p the complete solution for node.js comm..
-                            p <a href="#">2.9.0</a> published 3 weeks ago by <a href="#">jdalton</a>
-                        div
-                            h4 debug
-                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle the complete solution for node.js comm..
+                            p.modules__item-version <a href="#">2.9.0</a> published 3 weeks ago by <a href="#">jdalton</a>
+                        div.modules__item-content
+                            h4.modules__item-title debug
+                                svg.modules__item-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
                                     path(d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z")
-                            p small debugging utility
-                            p <a href="#">2.3.3</a> published 3 weeks ago by <a href="#">jdalton</a>
-        footer
-            div
-                div
-                    div
-                        header
-                            h3 You Nedd Help
-                        ul
-                            li: a(href="#") Documentation
-                            li: a(href="#") Support / Contact Us
-                            li: a(href="#") Registry Status
-                            li: a(href="#") Website Issues
-                            li: a(href="#") CLI Issues
-                            li: a(href="#") Security
-                    div
-                        header
-                            h3 About npm
-                        ul
-                            li: a(href="#") About npm, Inc
-                            li: a(href="#") Jobs
-                            li: a(href="#") npm Weekly
-                            li: a(href="#") Blog
-                            li: a(href="#") Twitter
-                            li: a(href="#") Github 
-                    div
-                        header
-                            h3 Legal Stuff
-                        ul
-                            li: a(href="#") Term of Use
-                            li: a(href="#") Code of Conduct
-                            li: a(href="#") Package Name Disputes
-                            li: a(href="#") Privacy Policy
-                            li: a(href="#") Reporting Abuse
-                            li: a(href="#") Other Policies
-                div
-                    svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                            p.modules__item-subtitle small debugging utility
+                            p.modules__item-version <a href="#">2.3.3</a> published 3 weeks ago by <a href="#">jdalton</a>
+        footer.footer
+            div.footer__container
+                div.footer__items-container
+                    div.footer__item
+                        header.footer__item-header
+                            h3.footer__item-title You Nedd Help
+                        ul.footer__item-list
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Documentation
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Support / Contact Us
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Registry Status
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Website Issues
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") CLI Issues
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Security
+                    div.footer__item
+                        header.footer__item-header
+                            h3.footer__item-title About npm
+                        ul.footer__item-list
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") About npm, Inc
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Jobs
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") npm Weekly
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Blog
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Twitter
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Github 
+                    div.footer__item
+                        header.footer__item-header
+                            h3.footer__item-title Legal Stuff
+                        ul.footer__item-list
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Term of Use
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Code of Conduct
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Package Name Disputes
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Privacy Policy
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Reporting Abuse
+                            li.footer__item-list-item: a.footer__item-list-link(href="#") Other Policies
+                div.footer__message
+                    svg.footer__message-icon-left(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
                         path(d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z")
-                    span npm loves you
-                    svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
+                    span.footer__message-text npm loves you
+                    svg.footer__message-icon-right(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32")
                         path(d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z")
         script(src="./js/scripts.js")
