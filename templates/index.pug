@@ -15,7 +15,7 @@ html(lang="en")
                     figure.header__logo-container
                         img.header__logo(src="./images/npm-logo.svg" alt="npm-logo")
                     div.header__icons-container
-                        p.header__sign <a href="#">sign up</a> or <a href="#">log in</a>
+                        span.header__sign <a class="header__sign-link" href="#">sign up</a> or <a class="header__sign-link" href="#">log in</a>
                         svg.header__menu-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24")
                             path(d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z") 
                 nav.nav
@@ -25,7 +25,7 @@ html(lang="en")
                         li.nav__list-item: a.nav__link(href="#") features
                         li.nav__list-item: a.nav__link(href="#") pricing
                         li.nav__list-item: a.nav__link(href="#") documentation
-                        li.nav__list-item: a.nav__link(href="#") support
+                        li.nav__list-item.nav__list-item--style: a.nav__link(href="#") support
         main
             section.landing
                 div.landing__container

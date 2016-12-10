@@ -1,0 +1,56 @@
+.header {
+    position: relative;
+    padding: 2em 0;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__logo-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo-container {
+        margin: 0;
+        padding: 0;
+    }
+    &__logo {
+        width: 6em;
+    }
+    &__icons-container {
+        display: flex;
+        align-items: center;     
+    }
+    &__sign {
+        margin-right: 1.5em;
+    }
+    &__sign,
+    &__sign-link {
+        color: rgba(#fff, .8);
+        font-size: 1.05em;
+    }
+    &__sign-link {
+        text-decoration: none;
+        transition: all 450ms ease-in;
+        &:hover {
+            color: #fff;
+        }
+        &:active {
+            text-decoration: underline;
+            color: #FFFEFE; 
+        }
+    }
+    &__menu-icon {
+        width: 3em;
+        height: 3em;
+        fill: $color4;
+        cursor: pointer;
+        border-radius: 5px 5px 0 0;
+        transition: all 250ms ease-in;
+        &:hover {
+            background-color: $color2;
+            fill: #fff;
+        }
+    }
+}

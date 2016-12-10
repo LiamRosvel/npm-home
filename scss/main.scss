@@ -1,3 +1,48 @@
 * {
     box-sizing: border-box;
 }
+
+//Color variables
+//color for bg
+$color1: #1A8BCB;
+$color2: #273547;
+$color3: #F0F0F0;
+
+//color for texts
+$color4: #A4BBD7;
+$color5: #373d48;
+$color6: #6d7986;
+$color7: #1a1a1a;
+
+//Fonts for website
+
+//font-family
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+//font-weight
+$light: 300;
+$normal: 400;
+$medium: 600;
+$bold: 700;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+//General styles
+img {
+    max-width: 100%;
+}
+
+//imports
+@import "partials/blocks";
+@import "partials/enterprise";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/landing";
+@import "partials/modules";
+@import "partials/nav";
+@import "partials/packages";
+@import "partials/pricing";
+@import "partials/security";
+@import "partials/start";
