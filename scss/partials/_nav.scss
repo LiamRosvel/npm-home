@@ -7,7 +7,8 @@
         width: 100%;
         min-height: 100vh;
         z-index: 500;
-        padding-top: 1em; 
+        padding-top: 1em;
+        transition: all 250ms ease-in; 
     }
     @media screen and (min-width: 768px) {
         position: absolute;
@@ -16,7 +17,6 @@
         width: 100%;
         background-color: #C12127;
     }
-
     &.mostrar {
         right: 0;
     }
