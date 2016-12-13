@@ -1,0 +1,72 @@
+.landing {
+    padding: 6em 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 400;
+    background-color: #1D4E69;
+    background-image: url('../images/hero-cityscape.svg');
+    background-size: cover;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    //Search Box container
+    &__search-container {
+
+    }
+    &__search-form {
+        position: relative;
+    }
+    &__search-button,
+    &__search-input {
+        border: none;
+        background-color: transparent;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__search-input {
+        line-height: 2.8;
+        border: 1px solid rgba(255,255,255,0.2);
+        width: 100%;
+        padding-left: 1em;
+        color: rgba(#ccc, .8);
+        &::placeholder {
+            color: rgba(#ccc, .8);
+        }
+    }
+    &__search-button {
+
+    }
+    &__search-menu-icon {
+        width: 1.8em;
+        height: 1.8em;
+        fill: rgba(#ccc, .8);
+
+        position: absolute;
+        top: .6em;
+        right: 1em;
+    }
+    //Landing copy
+    &__copy-container {
+
+    }
+    &__header {
+        margin-top: 15em;
+    }
+    &__title,
+    &__copy {
+        color: #fff;
+    }
+    &__title{
+        font-weight: $normal;
+        font-size: 2.6em;
+    }
+    &__copy {
+        font-size: 1.2em;
+        line-height: 1.7;
+    }
+}

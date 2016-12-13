@@ -1,0 +1,71 @@
+.footer {
+    background-color: $color2;
+    padding: 4em 0 2em;
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__items-container {
+
+    }
+    //items
+    &__item {
+        margin-bottom: 3em;
+    }
+    &__item-header {
+        border-bottom: 1px solid rgba($color4, .5);
+        margin-bottom: 1.5em;
+    }
+    &__item-title {
+        color: $color4;
+        font-size: 1.3em;
+        margin-bottom: 1.5em;
+    }
+    &__item-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item-list-item {
+
+    }
+    &__item-list-link {
+        text-decoration: none;
+        font-size: 1.1em;
+        color: $color3;
+        font-weight: $normal;
+        line-height: 3;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    //heart animation
+    &__message {
+        text-align: center;
+    }
+    &__message-link {
+        text-decoration: none;
+        color: $color3;
+        cursor: pointer;
+        &::before,
+        &::after {
+            content: "a";
+            font-family: heart-animation;
+            opacity: 0;
+            transition: all 500ms ease-in;
+            font-size: 11px;
+            display: inline-block; 
+        }
+        &::before {
+            margin-right: .1em;  
+        }
+        &:hover::before {
+            opacity: 1;
+            transform: translateX(-1em);
+        }
+        &:hover::after {
+            opacity: 1;
+            transform: translateX(1em);
+        }
+    }
+}

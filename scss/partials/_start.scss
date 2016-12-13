@@ -1,0 +1,42 @@
+.start { 
+    
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 3em 0 2em;
+        border-top: 1px solid rgba(#ccc, .4);
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img-container {
+        margin: 0;
+        padding: 0;
+        width: 28%;
+    }
+    &__copy-content {
+        width: 70%;
+        padding-left: .5em;
+    }
+    &__copy-title,
+    &__copy {
+        color: $color6;
+    }
+    &__copy-title {
+        font-size: 1.2em;
+        font-weight: $medium;
+    }
+    &__copy {
+        font-weight: $normal;
+        line-height: 1.4;
+    }
+    &__copy-link {
+        text-decoration: none;
+        color: #cb3837;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

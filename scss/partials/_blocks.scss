@@ -1,0 +1,49 @@
+.blocks {
+    background-color: $color3;
+    padding: 2em 0;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 5em;
+    }
+    &__header-title {
+        font-size: 2.5em;
+        font-weight: $light;
+        color: $color5;
+        line-height: 1.4;
+    }
+    &__header-copy {
+        color: $color6;
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+    //Items
+    &__items-container {
+
+    }
+    &__item {
+        margin-bottom: 5em;
+        text-align: center;
+    }
+    &__item-img-container {
+        margin: 0;
+        padding: 0;
+    }
+    &__item-img {
+        width: 10em;
+    }
+    &__item-title {
+        font-size: 1.6em;
+        color: $color5;
+        font-weight: $normal
+    }
+    &__item-copy {
+        color: $color6;
+        font-size: 1.2em;
+        line-height: 1.7;
+    }
+}

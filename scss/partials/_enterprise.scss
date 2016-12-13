@@ -1,0 +1,36 @@
+.enterprise {
+    background-color: $color2;
+    padding: 3em 0;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__img-container {
+        margin: 0 auto;
+        padding: 0;
+        width: 17em;
+    }
+    &__img {
+
+    }
+    &__copy-container {
+
+    }
+    &__header {
+
+    }
+    &__title,
+    &__copy {
+        color: #fff;
+    }
+    &__title {
+        font-size: 2.3em;
+        font-weight: $normal;
+        line-height: 1.3;
+    }
+    &__copy {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+}
