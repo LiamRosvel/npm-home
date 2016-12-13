@@ -8,6 +8,12 @@
     border-radius: 30px;
     transition: all 450ms ease-in;
 
+    @media screen and (min-width: 1024px) {
+        line-height: 2.5;
+        font-size: 1.1em;
+        padding: 0 2em;
+    }
+
     &__yellow,
     &__pricing--yellow {
         background-color: #f09233;
@@ -36,5 +42,10 @@
         width: 100%;
         padding: 0;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.1em;
+            line-height: 2.2; 
+        }
     }
 }

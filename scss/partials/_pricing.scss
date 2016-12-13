@@ -5,6 +5,13 @@
     &__container {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            width: 80%;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1070px;
+        }
     }
     &__header {
         text-align: center;
@@ -14,15 +21,28 @@
         color: $color5;
         font-weight: $light;
         font-size: 2.5em;
+
+        @media screen and (min-width: 768px) {
+            font-size: 2.1em;
+            margin-bottom: 0;
+        }
     }
     &__header-copy {
         color: $color6;
         font-size: 1.3em;
         line-height: 1.5;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.1em;
+            margin-top: .5em;
+        }
     }
     //Items for pricing
     &__items-container {
-
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__item {
         margin-bottom: 4em;
@@ -30,7 +50,11 @@
         border-bottom: 1px solid rgba(#ccc, .5);
         border-left: 1px solid rgba(#ccc, .5);
         border-right: 1px solid rgba(#ccc, .5);
-        background-color: #fff; 
+        background-color: #fff;
+
+        @media screen and (min-width: 768px) {
+            width: 32%;
+        } 
     }
     &__bg-color {
         height: 1em;
@@ -49,6 +73,10 @@
     &__block-price-container {
         text-align: right;
         padding: 1em 2em;
+
+        @media screen and (min-width: 768px) {
+            padding: 1em 2em .5em;
+        }
     }
     &__block-price-content {
         display: inline-block;
@@ -62,37 +90,75 @@
         position: relative;
         top: -.6em;
         font-size: 2em;
+
+        @media screen and (min-width: 768px) {
+            top: -.45em;
+            font-size: 1.5em;
+        }
     }
     &__price {
         font-weight: $light;
         font-size: 4em;
         color: $color5;
+
+        @media screen and (min-width: 768px) {
+            font-size: 2.5em;
+        }
     }
     &__price-month {
         margin-top: 0;
         font-size: 1em;
         font-weight: $bold;
+
+        @media screen and (min-width: 768px) {
+            font-size: .8em;   
+        }
     }
     &__price-from {
         font-size: 1em;
         position: relative;
         left: -.5em;
+
+        @media screen and (min-width: 768px) {
+            font-size: .9em;   
+        }
     }
     //Content text container
     &__block-content {
-        padding: 0 2em 2em;
+        padding: 0 2em;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 1em;
+            height: 20em;
+        }
     }
     &__block-title {
         font-size: 1.4em;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.2em;
+            margin-top: 0;   
+        }
     }
     &__block-text,
     &__block-copy {
         font-size: 1.1em;
         line-height: 1.4;
+
+        @media screen and (min-width: 768px) {
+            font-size: .9em;   
+        }
     }
     &__block-copy {
         color: $color6;
         font-weight: $bold;
+    }
+    &__block-content-link {
+        padding: 0 2em 2.5em;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 1em 1em;
+        }
     }
     //Color titles - texts
     &__footer-text-link,
@@ -116,17 +182,30 @@
         font-weight: $normal;
         color: $color5;
         font-size: 2.1em;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.6em;
+        }
     }
     &__footer-icon {
         width: .7em;
         height: .7em;
         fill: $color5;
         margin-right: .2em;
+
+        @media screen and (min-width: 768px) {
+            width: .6em;
+            height: .6em;
+        }
     }
     &__footer-text {
         color: $color6;
         line-height: 1.6;
         font-size: 1.2em;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1em;
+        }
     }
     &__footer-text-link {
         text-decoration: none;

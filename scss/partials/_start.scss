@@ -5,20 +5,45 @@
         margin: 0 auto;
         padding: 3em 0 2em;
         border-top: 1px solid rgba(#ccc, .4);
+
+        @media screen and (min-width: 1024px) {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1070px;
+        }
     }
     &__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (min-width: 1024px) {
+            align-items: flex-start;
+            width: 30%;
+        }
     }
     &__img-container {
         margin: 0;
         padding: 0;
         width: 28%;
+
+        @media screen and (min-width: 768px) {
+            width: 18%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 40%;
+        }
     }
     &__copy-content {
         width: 70%;
         padding-left: .5em;
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+        }
     }
     &__copy-title,
     &__copy {
@@ -27,6 +52,10 @@
     &__copy-title {
         font-size: 1.2em;
         font-weight: $medium;
+
+        @media screen and (min-width: 1024px) {
+            margin-top: 0;
+        }
     }
     &__copy {
         font-weight: $normal;

@@ -125,8 +125,9 @@
                             <p class="pricing__block-text pricing__block-text--red">Your own restricted scope for private code</p>
                             <p class="pricing__block-copy">Combine public packages with private code in your own namespace</p>
                             <p class="pricing__block-copy">Delegate access to other users</p>
-                            <p class="pricing__block-copy">Publish and install unlimited packages</p><a class="button button__pricing--red" href="#">Sign Up</a>
+                            <p class="pricing__block-copy">Publish and install unlimited packages</p>
                         </div>
+                        <div class="pricing__block-content-link"><a class="button button__pricing--red" href="#">Sign Up</a></div>
                     </div>
                     <div class="pricing__item">
                         <div class="pricing__bg-color pricing__bg-color--blue"></div>
@@ -140,8 +141,9 @@
                             <p class="pricing__block-text pricing__block-text--blue">Easy management to empower your team</p>
                             <p class="pricing__block-copy">Control publishing and package access for groups</p>
                             <p class="pricing__block-copy">Manage varying permissions for different teams and roles</p>
-                            <p class="pricing__block-copy">Pay for multiple users in one bill</p><a class="button button__pricing--blue" href="#">Sign Up</a>
+                            <p class="pricing__block-copy">Pay for multiple users in one bill</p>
                         </div>
+                        <div class="pricing__block-content-link"><a class="button button__pricing--blue" href="#">Sign Up</a></div>
                     </div>
                     <div class="pricing__item">
                         <div class="pricing__bg-color pricing__bg-color--yellow"></div>
@@ -155,8 +157,9 @@
                             <p class="pricing__block-text pricing__block-text--yellow">Bring npm into large companies</p>
                             <p class="pricing__block-copy">Selectively mirror the registry behind your firewall</p>
                             <p class="pricing__block-copy">Customize support and SLAs to meet your needs</p>
-                            <p class="pricing__block-copy">Integrate with existing deployment and auth­enti­cation tools</p><a class="button button__pricing--yellow" href="#">Learn More</a>
+                            <p class="pricing__block-copy">Integrate with existing deployment and auth­enti­cation tools</p>
                         </div>
+                        <div class="pricing__block-content-link"><a class="button button__pricing--yellow" href="#">Learn More</a></div>
                     </div>
                 </div>
                 <div class="pricing__footer">
@@ -175,7 +178,7 @@
                     <h2 class="packages__header-title">Packages people 'npm install' a lot</h2>
                 </header>
                 <div class="packages__items-container">
-                    <div class="packages__item">
+                    <div class="packages__item packages__item--column1">
                         <div class="packages__item-pack">
                             <figure class="packages__item-img-container"><img class="packages__item-img" src="./images/browserify.png" alt="browserify"></figure>
                             <div class="packages__copy-container">
@@ -286,91 +289,93 @@
                 <header class="modules__header">
                     <h2 class="modules__header-title">Most depended-upon packages</h2>
                 </header>
-                <div class="modules__item">
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">lodash
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">Lodash modular utilities.</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">4.17.2</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                <div class="modules__items-container">
+                    <div class="modules__item modules__item--column1">
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">lodash
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">Lodash modular utilities.</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">4.17.2</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">request
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">Simplified HTTP request client.</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.79.0</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">async
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">Higher-order functions and common patterns for as</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.1.4</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
                     </div>
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">request
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">Simplified HTTP request client.</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.79.0</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                    <div class="modules__item modules__item--column2">
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">underscore
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">JavaScript's functional programming help...</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">1.8.3</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">express
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">Fast, unopinionated, minimalist web fra..</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">4.14.0</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">chalk
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">Terminal string styling done right. Much..</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">1.1.3</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
                     </div>
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">async
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">Higher-order functions and common patterns for as</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.1.4</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
-                    </div>
-                </div>
-                <div class="modules__item modules__item--column2">
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">underscore
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">JavaScript's functional programming help...</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">1.8.3</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
-                    </div>
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">express
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">Fast, unopinionated, minimalist web fra..</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">4.14.0</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
-                    </div>
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">chalk
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">Terminal string styling done right. Much..</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">1.1.3</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
-                    </div>
-                </div>
-                <div class="modules__item modules__item--column3">
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">bluebird
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">Full featured Promises/A+ implementatio...</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">3.4.6</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
-                    </div>
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">commander
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">the complete solution for node.js comm..</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.9.0</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
-                    </div>
-                    <div class="modules__item-content">
-                        <h4 class="modules__item-title">debug
-                            <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-                                <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
-                            </svg>
-                        </h4>
-                        <p class="modules__item-subtitle">small debugging utility</p>
-                        <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.3.3</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                    <div class="modules__item modules__item--column3">
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">bluebird
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">Full featured Promises/A+ implementatio...</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">3.4.6</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">commander
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">the complete solution for node.js comm..</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.9.0</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
+                        <div class="modules__item-content">
+                            <h4 class="modules__item-title">debug
+                                <svg class="modules__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                                    <path d="M0 0v32h32v-32h-32zM26 26h-4v-16h-6v16h-10v-20h20v20z"></path>
+                                </svg>
+                            </h4>
+                            <p class="modules__item-subtitle">small debugging utility</p>
+                            <p class="modules__item-version"><a class="modules__item-version-link" href="#">2.3.3</a> published 3 weeks ago by <a class="modules__item-version-link" href="#">jdalton</a></p>
+                        </div>
                     </div>
                 </div>
             </div>

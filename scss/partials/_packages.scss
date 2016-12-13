@@ -4,6 +4,13 @@
     &__container {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            width: 80%;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1070px;
+        }
     }
     &__header {
         text-align: center;
@@ -13,13 +20,26 @@
         color: $color5;
         font-size: 2.5em;
         line-height: 1.4;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2.1em;
+        }
     }
     //Items
     &__items-container {
-
+        
+        @media screen and (min-width: 1024px) {
+            margin-top: 3em;
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__item {
         padding: 2em 1em;
+
+        @media screen and (min-width: 1024px) {
+            width: 49%;
+        }
     }
     //Individual
     &__item-pack {
@@ -27,15 +47,27 @@
         justify-content: space-between;
         align-items: center;
 
-        margin-bottom: 1em;      
+        margin-bottom: 1em;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 0;
+        }      
     }
     &__item-img-container {
         margin: 0;
         padding: 0;
         width: 28%;
+
+        @media screen and (min-width: 768px) {
+            width: 15%;
+        }
     }
     &__item-img-container--style {
         width: 4em;
+
+        @media screen and (min-width: 1024px) {
+            width: 2.6em;
+        }
     }
     &__item-img {
 
@@ -44,6 +76,10 @@
     &__copy-container {
         padding-left: .5em;
         width: 70%;
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+        }
     }
     &__copy-title {
         font-size: 1.1em;
@@ -69,9 +105,18 @@
             text-decoration: underline;
         }
     }
+    &__item--column1 {
+        
+        @media screen and (min-width: 1024px) {
+            border-right: 2px solid rgba(#ccc, .5);
+        }
+    }
     &__item--column2 {
         @media screen and (max-width: 1023px) {
-            display: none
+            display: none;
+        }
+        @media screen and (min-width: 1200px) {
+            border-right: 2px solid rgba(#ccc, .5);
         }
     }
     &__item--column3 {

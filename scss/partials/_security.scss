@@ -3,19 +3,53 @@
     background-color: $color1;
     padding: 2em 0;
 
+    @media screen and (min-width: 480px) {
+        margin-top: 41.5em;
+    }
+    @media screen and (min-width: 640px) {
+        margin-top: 39.5em;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 40.5em;
+        padding: 6em 0;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-top: 25em;
+    }
+
     &__container {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            width: 60%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1070px;
+        }
     }
     &__img-container {
         margin: 0;
         padding: 0;
+
+        @media screen and (min-width: 1024px) {
+            width: 50%;
+        }
     }
     &__img {
 
     }
     &__copy-container {
-
+        @media screen and (min-width: 1024px) {
+            width: 45%;
+        }
     }
     &__header {
 
@@ -28,6 +62,10 @@
         font-weight: $normal;
         font-size: 2.3em;
         line-height: 1.4;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.8em;
+        }
     }
     &__list {
 
@@ -36,5 +74,9 @@
         font-size: 1.2em;
         line-height: 1.6;
         margin-bottom: 1em;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1em;
+        }
     }
 }

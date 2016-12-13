@@ -5,6 +5,13 @@
     &__container {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            width: 80%;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1070px;
+        }
     }
     &__header {
         text-align: center;
@@ -15,19 +22,35 @@
         font-weight: $light;
         color: $color5;
         line-height: 1.4;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2.1em;
+        }
     }
     &__header-copy {
         color: $color6;
         font-size: 1.2em;
         line-height: 1.6;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.1em;
+        }
     }
     //Items
     &__items-container {
-
+        
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__item {
         margin-bottom: 5em;
         text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            width: 30%;
+        }
     }
     &__item-img-container {
         margin: 0;
@@ -39,11 +62,19 @@
     &__item-title {
         font-size: 1.6em;
         color: $color5;
-        font-weight: $normal
+        font-weight: $normal;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.3em;
+        }
     }
     &__item-copy {
         color: $color6;
         font-size: 1.2em;
         line-height: 1.7;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1em;
+        }
     }
 }

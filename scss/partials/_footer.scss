@@ -4,6 +4,13 @@
     &__container {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            width: 80%;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1070px;
+        }
     }
     &__items-container {
 
